@@ -5,26 +5,36 @@
     </head>
     <body>
         <header>
-        <img src= "D:\Lessons\images\logo.png" alt="logo">
+        <img src= "../my_project1/images/logo.png" alt="logo">
         <form class="search">  <!-- надо поиграть с flex -->
             <div class="search1">
                 <input type="search" id="search" name="search">
-                <input type="checkbox" id="in stock only" name="options" value="in stock only">
-                <label>In Stock Only</label>
-                <input type="checkbox" id="best price" name="options" value="best price">
-                <label>Best Price</label>
+                <div class="search2">
+                <label>
+                    
+                    <input type="checkbox" id="in stock only" name="options" value="in stock only">
+                    In Stock Only</label>
+                <label>
+
+                    <input type="checkbox" id="best price" name="options" value="best price">
+
+                    Best Price
+                </label>
+                </div>
             </div>
         </form>
         <div class="links"> 
             <p>BOM</p>
             <p>Canada</p>
-            <label for=”language select”>ENG</label>
+        <form>
+            <!-- <label for=”language select”>ENG</label> -->
 		    <input type=”text” list=”languages” id=”language” name=”language”>
-		    <datalist id=”language select”>
+		    <datalist id=”languages”>
 			    <option value=”ENG”></option>
 			    <option value=”UKR”></option>
 			    <option value=”RUS”></option>
-		</datalist>
+		    </datalist>
+        </form>
 
     </div>  
         </header>

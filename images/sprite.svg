@@ -1,0 +1,7 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="envelope" viewBox="0 0 45 32">
+<path fill="#329dcc" style="fill: var(--color1, #329dcc)" d="M21.356 16l-21.333-10.792v-2.542c0-0.75 0.264-1.382 0.792-1.896s1.153-0.771 1.875-0.771h37.333c0.722 0 1.347 0.257 1.875 0.771s0.792 1.146 0.792 1.896v2.542l-21.333 10.792zM20.023 18.667h2.667l20-10.375v21.042c0 0.722-0.264 1.347-0.792 1.875s-1.153 0.792-1.875 0.792h-37.333c-0.722 0-1.347-0.264-1.875-0.792s-0.792-1.153-0.792-1.875v-21.042l20 10.375z"></path>
+</symbol>
+</defs>
+</svg>
