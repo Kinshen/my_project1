@@ -5,39 +5,54 @@
     </head>
     <body>
         <header>
-        <img src= "../my_project1/images/logo.png" alt="logo">
-        <form class="search">  <!-- надо поиграть с flex -->
-            <div class="search1">
-                <input type="search" id="search" name="search">
+                <div class="logo"><img src= "../my_project1/images/logo.png" alt="logo">
+                </div>
+            <form>           <!-- Поиск и чекбоксы -->
+                <div class="search1">
+                <input type="text" placeholder="stab" name="search">
                 <div class="search2">
                 <label>
-                    
                     <input type="checkbox" id="in stock only" name="options" value="in stock only">
-                    In Stock Only</label>
-                <label>
-
-                    <input type="checkbox" id="best price" name="options" value="best price">
-
-                    Best Price
+                    In Stock Only
                 </label>
+                <label>
+                    <input type="checkbox" id="best price" name="options" value="best price">
+                    Best Price
+                </label>              
                 </div>
-            </div>
-        </form>
-        <div class="links"> 
-            <p>BOM</p>
-            <p>Canada</p>
-        <form>
-            <!-- <label for=”language select”>ENG</label> -->
-		    <input type=”text” list=”languages” id=”language” name=”language”>
-		    <datalist id=”languages”>
-			    <option value=”ENG”></option>
-			    <option value=”UKR”></option>
-			    <option value=”RUS”></option>
-		    </datalist>
-        </form>
+                </div>
+            </form>
+                <div class="links"> 
+                <p>BOM</p>
+                <p>Canada</p>
+            <form>                              <!-- Выбор языка -->
+		        <input type=”text” list=”languages”  name=”language”>
+		        <datalist id=”languages”>
+			        <option value= ENG></option>
+			        <option value= UKR></option>
+			        <option value= RUS></option>
+		        </datalist>
+            </form>
+            <form>                               <!-- Валюта -->
+		        <input type=”text” list=”currency”  name=”language”>
+		        <datalist id=”currency”>
+			        <option value= USD.></option>
+			        <option value= Eur.></option>
+			        <option value= Hrn.></option>
+		        </datalist>
+             </form>
 
-    </div>  
+
+                 </div>  
         </header>
+            <main>
+                <div class="contacts">
+                <h2>Contact us</h2>
+                <p><span class="a">Sales:</span> <span> sales@cpunto.com </span></p>
+                <p><span class="b"> Customer Service: </span> <span> support@cpunto.com </span></p>
+                <p><span>+1-833-702-1505</span></p>
+                </div>
+            </main>
     
 
 
