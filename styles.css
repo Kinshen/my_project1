@@ -42,34 +42,21 @@ header{
 .search1{
     margin-right: 86px;
     margin-top: 20px;
+    left: 417px;
     width: 667px;
-    height: 44px;
+    height: 76px;
     padding: 4px;
     box-sizing: border-box;
     width: 667px;
     height: 44px;
     display: flex;
     flex-direction: column;
+    gap: 8px;
     
 }
 .search2{
 display: flex;
 flex-direction: row;
-}
-.contacts{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px, 0px, 0px;
-    gap: 30px;
-    width: 383px;
-    height: 508px;
-    left: 417px;
-    top: 146px;
-    border-top: 146px;
-    border-left: 417px;
-    border-right: 1120px;
-    border-bottom: 446px;
 }
 .a{
     width: 118px;
@@ -82,10 +69,29 @@ flex-direction: row;
 .b{
     width: 118px;
     height: 20px;
-    padding-right: 118px;
+    /* padding-right: 118px; */
     margin-right: 4px;
-    margin-top: 8px;
     margin-left: 32px;
+    margin-top: 8px;
+    margin-bottom: 42px;
+   
+}
+.c{
+    width: 120px;
+    height: 20px;
+    margin-right: 8px;
+    margin-left: 13px;
+    margin-top: 42px;
+   
+}
+.flag{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 2px;
+    top: 2px;
+    margin-left: 8px;
+    margin-right: 18px;
 }
 
 .reach{
