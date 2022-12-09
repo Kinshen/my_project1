@@ -33,7 +33,6 @@ header{
     top: 20px;
 }
 .class{
-    font: Roboto;
     font-weight: 500;
     size: 22px;
     line-height:20px;
@@ -58,40 +57,58 @@ header{
 display: flex;
 flex-direction: row;
 }
-.a{
-    width: 118px;
-    height: 20px;
-    padding-right: 118px;
-    margin-top: 30px;
-    margin-right: 4px;
-    margin-left: 32px;
+.wrapper{
+    margin-left: 417px;
+    margin-top: 40px;
 }
-.b{
-    width: 118px;
-    height: 20px;
-    /* padding-right: 118px; */
-    margin-right: 4px;
-    margin-left: 32px;
-    margin-top: 8px;
-    margin-bottom: 42px;
-   
+.block_flex{
+    display:flex;
+    justify-content: space-between;
+    
 }
-.c{
-    width: 120px;
-    height: 20px;
-    margin-right: 8px;
-    margin-left: 13px;
-    margin-top: 42px;
-   
+
+/* Заголовок Contact Us */
+
+.title_contact{
+    font-family: roboto;
+    color: #386E95;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    size: 22px;
+    line-height:20px;
 }
-.flag{
+
+.title_reach{
+    font-family: roboto;
+    font-style: normal;
+    color: #386E95;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    size: 24px;
+    line-height:20px;
+}
+
+/* Иконки слева от текста */
+.section_icons_position{
+    position: relative;
+    padding: 0px 13px 0px 5px;
+}
+.section_icons_position::before{
+    width: 13.33px;
+    height: 10px;
     position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 2px;
-    top: 2px;
-    margin-left: 8px;
-    margin-right: 18px;
+    left: 5px;
+}
+
+/* Отступ от текста */
+.service_info{
+    margin-bottom: 42px;
+
+    /* Отступ от номеров */
+}
+.phone_numbers{
+    margin-bottom: 42px;
+    
 }
 
 .reach{
@@ -104,4 +121,23 @@ flex-direction: row;
     height: 420px;
     left: 1114px;
     top: 146px;
+}
+
+.reach_out{
+    margin-right: 418px;
+    
+}
+/* Размеры полей для ввода информации */
+.input_data{
+    box-sizing: border-box;
+    height: 38px;
+    width: 388px;
+    top: 20px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+.input_container{
+    height: 144px;
+    width: 388px;
 }
