@@ -1,16 +1,16 @@
 body{
     font-family: Roboto;
 }
-header{
+.header {
     display: flex;
-    width: 1920px;
+    /*width: 1920px;*/
     height: 106px;
     left: calc(50% - 1920px/2);
     top: 0px;
     background: linear-gradient(270deg, #3E443A 0%, #576484 100%);
     color: #FFFFFF;
 }
-.logo{
+.logo {
     margin-top: 27px;
     margin-left: 140px;
     margin-right: 133px;
@@ -19,7 +19,7 @@ header{
     display: flex;
     flex-direction: row;
 }
-.links{
+.links {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -46,12 +46,12 @@ header{
     height: 76px;
     padding: 4px;
     box-sizing: border-box;
-    width: 667px;
+    /*width: 667px;*/
     height: 44px;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    
+
 }
 .search2{
 display: flex;
@@ -64,7 +64,7 @@ flex-direction: row;
 .block_flex{
     display:flex;
     justify-content: space-between;
-    
+
 }
 
 /* Заголовок Contact Us */
@@ -108,7 +108,7 @@ flex-direction: row;
 }
 .phone_numbers{
     margin-bottom: 42px;
-    
+
 }
 
 .reach{
@@ -125,7 +125,7 @@ flex-direction: row;
 
 .reach_out{
     margin-right: 418px;
-    
+
 }
 /* Размеры полей для ввода информации */
 .input_data{

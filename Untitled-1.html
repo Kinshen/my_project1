@@ -4,92 +4,88 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header>
+        <header class="header">
                 <div class="logo"><img src= "../my_project1/images/logo.png" alt="logo">
                 </div>
             
                             <!-- Поиск и чекбоксы -->
 
-            <form>           
+            <form>
                 <div class="search1">
-                <input type="text" placeholder="stab" name="search">
-                <div class="search2">
-                <label>
-                    <input type="checkbox" id="in stock only" name="options" value="in stock only">
-                    In Stock Only
-                </label>
-                <label>
-                    <input type="checkbox" id="best price" name="options" value="best price">
-                    Best Price
-                </label>              
-                </div>
+                    <input type="text" placeholder="stab" name="search">
+                    <div class="search2">
+                        <label>
+                            <input type="checkbox" id="in stock only" name="options" value="in stock only">
+                            In Stock Only
+                        </label>
+                        <label>
+                            <input type="checkbox" id="best price" name="options" value="best price">
+                            Best Price
+                        </label>
+                    </div>
                 </div>
             </form>
-                <div class="links"> 
+                <div class="links">
                 <p>BOM</p>
                 <p>Canada</p>
 
-                <!-- Выбор языка -->                           
+                <!-- Выбор языка -->
 		        <select name= ”language” >
 			        <option value= "ENG" selected>ENG</option>
 			        <option value= "UKR">UKR</option>
 			        <option value= "RUS">RUS</option>
                 </select>
-                <!-- Валюта -->                             
+                <!-- Валюта -->
                 <select name= ”currency” >
 			        <option value= "USD" selected>$ USD</option>
 			        <option value= "UAH">₴ UAH</option>
 			        <option value= "RUR">₽ RUR</option>
                 </select>
-                 </div>  
+                 </div>
         </header>
-            <main>
-                <div class="wrapper">
-                    <div class="block_flex">
+        <main>
+            <div class="wrapper">
+                <div class="block-flex">
                     <div id="contact_us">
-                <h2 class="title_contact">Contact us</h2> 
-                <div class="service_info">
-                    <p><img class ="section_icons_position" src="/my_project1/images/letter.svg" alt=""> Sales: sales@cpunto.com </p>
-                    <p> Customer Service:  support@cpunto.com </p>
-                </div>
+                        <h2 class="title_contact">Contact us</h2>
+                        <div class="service_info">
+                            <p><img class ="section_icons_position" src="/my_project1/images/letter.svg" alt=""> Sales: sales@cpunto.com </p>
+                            <p> Customer Service:  support@cpunto.com </p>
+                        </div>
                 
-                <!-- Номера телефонов -->
-                <div class="phone_numbers">
-                <p>+1-833-702-1505 <img src= "../my_project1/images/canadian_flag.svg" alt="canadian_flag"> (Toll-free Canada/USA)</p>
-                <p>+1-514-808-1875 <img src= "../my_project1/images/canadian_flag.svg" alt="canadian_flag"> (Direct Canada/USA)</p>
-                <p>+44-113-868-2760 <img src="/my_project1/images/gb_flag.svg" alt="Great_britain_flag" >(Direct United Kingdom)</p>
-                <p>+64-9-954-4005 <img src="/my_project1/images/australian_flag.svg" alt="australian_flag">(Direct Australia/New Zeland)</p>
+                        <!-- Номера телефонов -->
+                        <div class="phone_numbers">
+                            <p>+1-833-702-1505 <img src= "../my_project1/images/canadian_flag.svg" alt="canadian_flag"> (Toll-free Canada/USA)</p>
+                            <p>+1-514-808-1875 <img src= "../my_project1/images/canadian_flag.svg" alt="canadian_flag"> (Direct Canada/USA)</p>
+                            <p>+44-113-868-2760 <img src="../my_project1/images/gb_flag.svg" alt="Great_britain_flag" >(Direct United Kingdom)</p>
+                            <p>+64-9-954-4005 <img src="../my_project1/images/australian_flag.svg" alt="australian_flag">(Direct Australia/New Zeland)</p>
+                        </div>
+                
+                        <!-- Локация -->
+                        <p> cPunto, Inc </p>
+                        <p>5929 Trans Canada</p>
+                        <p>suite 130</p>
+                        <p>Saint-Laurent, Quebec,</p>
+                        <p>Canada H4T 1Z6</p>
+                    </div>
+            
+                    <div id="reach_out">
+                        <h2 class="title_reach">Reach out to us</h2>
+                        <p>Name</p>
+                        <form>
+                            <input class="input_data" type="text" placeholder="Enter your name">
+                    
+                            <p>Email</p>
+                    
+                            <input class="input_data" type="text" placeholder="Enter email address">
+                    
+                            <p>Message</p>
+                    
+                            <textarea сlass="input_container" type="text" placeholder="Start writting a message"></textarea>
+                        </form>
+                    </div>
                 </div>
-
-                <!-- Локация -->
-                <p> cPunto, Inc </p>
-                <p>5929 Trans Canada</p>
-                <p>suite 130</p>
-                <p>Saint-Laurent, Quebec,</p>
-                <p>Canada H4T 1Z6</p>
-                </div>
-
-                <div id="reach_out">
-                <h2 class="title_reach">Reach out to us</h2>
-                <p>Name</p>
-                <form>
-                    <input class="input_data" type="text" placeholder="Enter your name">
-                </form>
-                <p>Email</p>
-                <form>
-                    <input class="input_data" type="text" placeholder="Enter email address">
-                </form>
-                <p>Message</p>
-                <form>
-                    <input сlass="input_container" type="text" placeholder="Start writting a message">
-                </form>
-                </div>
-                </div>
-               </div>
-            </main>
-    
-
-
-    
+            </div>
+        </main>
     </body>
 </html>
