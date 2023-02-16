@@ -1,16 +1,21 @@
 body{
     font-family: Roboto;
+    margin: 0;
+    padding: 0;
 }
-header{
-    display: flex;
-    width: 1920px;
+.header {
     height: 106px;
-    left: calc(50% - 1920px/2);
-    top: 0px;
     background: linear-gradient(270deg, #3E443A 0%, #576484 100%);
     color: #FFFFFF;
 }
-.logo{
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 140px;
+    padding-top: 15px;
+    color: #FFFFFF;
+}
+.logo {
     margin-top: 27px;
     margin-left: 140px;
     margin-right: 133px;
@@ -19,44 +24,73 @@ header{
     display: flex;
     flex-direction: row;
 }
-.links{
+.links {
+    margin-top: 20px;
+    margin-left: 97px;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0px;
-    margin-top: 20px;
-    gap: 16px;
-    width: 610px;
-    height: 38px;
-    right: 140px;
-    top: 20px;
+    align-items: self-start;
+    justify-content: space-between;
 }
-.class{
-    font-weight: 500;
-    size: 22px;
-    line-height:20px;
-    color: #386E95;
+.search-form-sizes {
+    max-width: 667px;
+    min-width: 300px;
 }
-.search1{
-    margin-right: 86px;
-    margin-top: 20px;
-    left: 417px;
-    width: 667px;
-    height: 76px;
-    padding: 4px;
-    box-sizing: border-box;
+.search {
     width: 667px;
     height: 44px;
+}
+.header-search-checkbox {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-    
+    margin-top: 10px;
 }
-.search2{
-display: flex;
-flex-direction: row;
+.checkbox-block {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
 }
+.checkbox-block-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    font-size: 22px;
+    height: 14px;
+}
+.checkbox-text {
+    font-size: 14px;
+}
+
+.header-menu{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+.header-menu-item-select {
+    background: transparent;
+    color: #fff;
+    border: none;
+}
+.header-menu-item-image {
+    margin-right: 5px;
+}
+.header-menu-item {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+.item-cart {
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    font-size: 12px;
+    padding: 0 10px;
+    border-radius: 35%;
+    background: #329DCC;
+}
+.block-cart {
+    position: relative;
+}
+
 .wrapper{
     margin-left: 417px;
     margin-top: 40px;
@@ -64,7 +98,7 @@ flex-direction: row;
 .block_flex{
     display:flex;
     justify-content: space-between;
-    
+
 }
 
 /* Заголовок Contact Us */
@@ -108,9 +142,8 @@ flex-direction: row;
 }
 .phone_numbers{
     margin-bottom: 42px;
-    
-}
 
+}
 .reach{
     display: flex;
     flex-direction: column;
@@ -125,7 +158,7 @@ flex-direction: row;
 
 .reach_out{
     margin-right: 418px;
-    
+
 }
 /* Размеры полей для ввода информации */
 .input_data{
