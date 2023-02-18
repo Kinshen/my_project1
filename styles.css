@@ -1,10 +1,22 @@
-body{
+.body, html{
     font-family: Roboto;
     margin: 0;
     padding: 0;
+    height: 100%;
+}
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 1920px;
+    
+}
+.main{
+    flex: 1 1 auto;
 }
 .header {
     height: 106px;
+    width: 1920px;
     background: linear-gradient(270deg, #3E443A 0%, #576484 100%);
     color: #FFFFFF;
 }
@@ -17,7 +29,6 @@ body{
 }
 .logo {
     margin-top: 27px;
-    margin-left: 140px;
     margin-right: 133px;
     width: 144px;
     height: 24px;
@@ -38,6 +49,7 @@ body{
 .search {
     width: 667px;
     height: 44px;
+    position: relative;
 }
 .header-search-checkbox {
     display: flex;
@@ -48,18 +60,9 @@ body{
     align-items: center;
     margin-right: 25px;
 }
-.checkbox-block-container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    font-size: 22px;
-    height: 14px;
-}
 .checkbox-text {
     font-size: 14px;
 }
-
 .header-menu{
     display: flex;
     align-items: center;
@@ -91,19 +94,16 @@ body{
     position: relative;
 }
 
-.wrapper{
+.wrapper-container{
     margin-left: 417px;
+    margin-right: 418px;
     margin-top: 40px;
 }
-.block_flex{
+.block-flex{
     display:flex;
-    justify-content: space-between;
-
+    justify-content: space-between ;
 }
-
-/* Заголовок Contact Us */
-
-.title_contact{
+.title-contact{
     font-family: roboto;
     color: #386E95;
     margin-top: 60px;
@@ -111,8 +111,7 @@ body{
     size: 22px;
     line-height:20px;
 }
-
-.title_reach{
+.title-reach{
     font-family: roboto;
     font-style: normal;
     color: #386E95;
@@ -121,46 +120,23 @@ body{
     size: 24px;
     line-height:20px;
 }
-
-/* Иконки слева от текста */
-.section_icons_position{
-    position: relative;
-    padding: 0px 13px 0px 5px;
+.table{
+    width: 383px;
+    height: 508px;
 }
-.section_icons_position::before{
-    width: 13.33px;
-    height: 10px;
-    position: absolute;
-    left: 5px;
+.table-text{
+    margin-left: 13px;
 }
-
-/* Отступ от текста */
-.service_info{
-    margin-bottom: 42px;
-
-    /* Отступ от номеров */
+.table-text-second{
+    margin-left: 28px;
+    
 }
-.phone_numbers{
-    margin-bottom: 42px;
-
+.flag-text{
+    margin-left: 18px;
 }
-.reach{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 20px 0px 0px;
-    gap: 64px;
-    width: 388px;
-    height: 420px;
-    left: 1114px;
-    top: 146px;
+.messengers{
+    margin-left: 22px;
 }
-
-.reach_out{
-    margin-right: 418px;
-
-}
-/* Размеры полей для ввода информации */
 .input_data{
     box-sizing: border-box;
     height: 38px;
@@ -170,7 +146,94 @@ body{
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
-.input_container{
-    height: 144px;
+textarea{
+    height: 114px;
     width: 388px;
+    resize: none;
+    
+}
+.button{
+    font-family: roboto;
+    color: #fff;
+    background-color: #386E95;
+    width: 388px;
+    height: 36px;
+    margin-top: 24px;
+    cursor: pointer;
+}
+.footer{
+    background: linear-gradient(270deg, #3E443A 0%, #576484 100%);
+    color: #FFFFFF;
+    min-height: 146px;
+    width: 1920px;
+    margin-top: 346px;
+}
+.footer-contacts-info{
+    margin-top: 20px;
+    margin-left: 140px;
+    margin-bottom: 22px;
+    margin-right: 109px;
+    
+}
+.footer-image{
+    margin-right: 13px;
+}
+.copyright{
+    color: #FFFFFF;
+    opacity: 50%;
+    size: 10px;
+    margin-bottom: 22px;
+}
+.h4{
+    font-size: 12px;
+    color: #FFFFFF;
+}
+.footer-blocks{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+}
+.footer-links-block{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 114px 0px 0px;
+    gap: 60px;
+    width: 737px;
+    height: 78px;
+    margin-top: 20px;
+}
+.footer-links-headings{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+.footer-links-text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+.footer-payment-images{
+    margin-top: 26px;
+    margin-right: 12px;
+
+}
+.footer-crypto-container{
+    display: flex;
+    align-items: space between;
+    justify-content: end;
+}
+.footer-crypto-images{
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
+.footer-crypto{
+    margin-right: 10px; 
 }

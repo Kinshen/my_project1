@@ -6,115 +6,210 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header class="header">
+        <div class="wrapper">
+            <header class="header">
                 <div class="header-container">
-                <div class="logo"><img src= "../my_project1/images/logo.png" alt="logo">
+                        <img src= "../my_project1/images/logo.png" alt="logo" class="logo">
+                            <form>
+                                <div class="search-form-sizes">
+                                    <input type="search" placeholder="Please, enter your text" name="search" class="search">
+                                    <div class="header-search-checkbox">
+                                        <div class="checkbox-block">
+                                            <label class="checkbox-text">
+                                                <input type="checkbox" id="in stock only" name="options" value="in stock only">
+                                                In Stock Only
+                                            </label>
+                                        </div>
+                                        <div class="checkbox-block">
+                                            <label class="checkbox-text">
+                                                <input type="checkbox" id="best price" name="options" value="best price">
+                                                Best Price
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                    <nav class="links">
+                                <div class="header-menu-item ">
+                                    <img src="./images/BOM.png" alt="" class="header-menu-item-image">
+                                    <span>BOM</span>
+                                </div>
+                                <div class="header-menu-item ">
+                                    <span>Canada</span>
+                                </div>
+                                <div class="header-menu">
+                                    <select name= ”language” class="header-menu-item-select">
+                                        <option value= "ENG" selected>ENG</option>
+                                        <option value= "UKR">UKR</option>
+                                        <option value= "RUS">RUS</option>
+                                    </select>
+                                </div>
+                                <div class="header-menu">
+                                    <select name= ”currency” class="header-menu-item-select">
+                                        <option value= "USD" selected>$ USD</option>
+                                        <option value= "UAH">₴ UAH</option>
+                                        <option value= "RUR">₽ RUR</option>
+                                    </select>
+                                </div>
+                                    <img src="./images/avatar.svg" alt="">
+                                        <select name= ”My account” class="header-menu-item-select">
+                                            <option value= "Account №1" selected>My account</option>
+                                            <option value= "Account №2">My account №2</option>
+                                            <option value= "Account №3">My account №3</option>
+                                        </select>
+                                    <img src="./images/cart.svg" alt="">
+                                <div class="block-cart">
+                                    <span class="item-cart">0</span>
+                                </div>
+                    </nav> 
                 </div>
-            
-                            <!-- Поиск и чекбоксы -->
+            </header>
+            <main>
+                <div class="wrapper-container">
+                    <div class="block-flex">
+                        <table>
+                            <tr>
+                                <td><h2 class="title-contact">Contact us</h2></td>
+                            </tr>
+                            <tr><td height="30px"></td></tr>
+                                <tr>
+                                    <td><img src="/my_project1/images/letter.svg" alt="" ><span class="table-text"> Sales:</span></td>
+                                    <td>support@cpunto.com</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="table-text-second"> Customer Service:</span></td>
+                                    <td>support@cpunto.com</td>
+                                </tr>
+                                <tr height="42px"><td></td></tr>
+                                <tr>
+                                    <td><img src="/my_project1/images/Phone.svg" alt=""><span class="table-text">+1-833-702-1505</span></td>
+                                    <td><img src="/my_project1/images/canadian_flag.svg" alt="canadian_flag"><span class="flag-text">(Toll-free Canada/USA)</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="table-text-second">+1-514-808-1875</span></td>
+                                    <td><img src="/my_project1/images/canadian_flag.svg" alt=""><span class="flag-text">(Direct Canada/USA)</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="table-text-second">+44-113-868-2760</span></td>
+                                    <td><img src="/my_project1/images/gb_flag.svg" alt=""><span class="flag-text">(Direct United Kingdom)</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="table-text-second">+64-9-954-4005</span></td>
+                                    <td><img src="/my_project1/images/australian_flag.svg" alt=""><span class="flag-text">(Direct Australia/New Zeland)</span></td>
+                                </tr>
+                                <tr height="42px"><td></td></tr>
+                                <tr>
+                                    <td><img src="/my_project1/images/gps.svg" alt=""><b class="table-text">cPunto, Inc</b></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="table-text-second">5929 Trans Canada</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="table-text-second">suite 130</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="table-text-second"> Saint-Laurent, Quebec,</span> </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="table-text-second"> Canada H4T 1Z6</span> </td>
+                                </tr>
+                                <tr>
+                                    <td height ="48px"></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="/my_project1/images/telegram.svg" alt=""> 
+                                        <img src="/my_project1/images/wechat.svg" alt="" class="messengers">
+                                        <img src="/my_project1/images/viber.svg" alt="" class="messengers">
+                                        <img src="/my_project1/images/cib_whatsapp.svg" alt="" class="messengers">
+                                        <img src="/my_project1/images/skype.svg" alt="" class="messengers">
+                                    </td>
+                                    
 
-            <form>
-                <div class="search-form-sizes">
-                    <input type="text" placeholder="stab" name="search" class="search">
-                    <div class="header-search-checkbox">
-                        <div class="checkbox-block">
-                            <label for="checkbox-block-container">
-                            </label>
-                            <label class="checkbox-text">
-                                <input type="checkbox" id="in stock only" name="options" value="in stock only">
-                                In Stock Only
-                            </label>
-                            <label class="checkbox-text">
-                                <input type="checkbox" id="best price" name="options" value="best price">
-                                Best Price
-                            </label>
+                                </tr>
+
+                                </div>        
+                        </table>     
+                        <div>
+                            <h2 class="title-reach">Reach out to us</h2>
+                            <p>Name</p>
+                            <form>
+                                <input class="input_data" type="text" placeholder="Enter your name">                        
+                                <p>Email</p>                        
+                                <input class="input_data" type="text" placeholder="Enter email address">                        
+                                <p>Message</p>               
+                                <textarea сlass="textarea" type="text" placeholder="Start writting a message"></textarea>
+                            </form>
+                            <input type="button" class="button" value="SEND">
                         </div>
                     </div>
                 </div>
-            </form>
-                <nav class="links">
-                        <div class="header-menu-item ">
-                            <img src="./images/BOM.png" alt="" class="header-menu-item-image">
-                            <span>BOM</span>
+            </main>
+                <footer class="footer">
+                    <div class="footer-blocks">
+                        <div class="footer-contacts-info">
+                            <img src= "../my_project1/images/logo.png" alt="logo">
+                            <p><img src="/my_project1/images/white-letter.svg" alt="" class="footer-image">SALES@CPUNTO.COM</p>
+                            <p><img src="/my_project1/images/white-phone.svg" alt="" class="footer-image">+1 833 702 1505</p>
+                            <p class="copyright">@Copyright 2020. All rights resereved.</p>
                         </div>
-                        <div class="header-menu-item ">
-                             <span>Canada</span>
+                        <nav class="footer-links-block">
+                            <div>
+                                <p class="footer-links-headings">About Us</p>
+                                <div class="footer-links-text">
+                                    <p>Career</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="footer-links-headings">Service</p>
+                                <div class="footer-links-text">
+                                    <p>Contact Us</p>
+                                    <p>FAQ`s</p>
+                                 </div>
+                            </div>
+                            <div>
+                                <p class="footer-links-headings">Information</p>
+                                <div class="footer-links-text">
+                                    <p>Delivery information</p>
+                                    <p>Selling through us</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="footer-links-headings">Policies</p>
+                                <div class="footer-links-text">
+                                    <p>Term and Conditions</p>
+                                    <p>Privacy Policy</p>
+                                    <p>Return Policy</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="footer-links-headings">Products</p>
+                                <div class="footer-links-text">
+                                    <p>All parts</p>
+                                </div>
+                            </div>
+                        </nav>
+                        <div>
+                            <div>
+                                <img src="/my_project1/images/payment-providers-image/1200px-Mastercard_2019_logo.svg" alt="" class="footer-payment-images">
+                                <img src="/my_project1/images/payment-providers-image/1200px-Visa 1.svg" alt="" class="footer-payment-images">
+                                <img src="/my_project1/images/payment-providers-image/1280px-UnionPay_logo.svg" alt="" class="footer-payment-images">
+                                <img src="/my_project1/images/payment-providers-image/JCB_logo.svg" alt="" class="footer-payment-images">
+                                <img src="/my_project1/images/payment-providers-image/Discover-Logo 1.svg" alt="" class="footer-payment-images">
+                                <img src="/my_project1/images/payment-providers-image/american_express_logo_wordmark_detail.svg" alt="" class="footer-payment-images">
+                                <img src="/my_project1/images/payment-providers-image/PayPal-Logo 1.svg" alt="" class="footer-payment-images">
+                                <img src="/my_project1/images/payment-providers-image/coinbase 1.svg" alt="" class="footer-payment-images">
+                            </div>
+                            <div class="footer-crypto-container">
+                                <p>We accept crypto</p>
+                                    <div class="footer-crypto-images">
+                                        <img src="/my_project1/images/payment-providers-image/Group 9.svg" alt="" class="footer-crypto">
+                                        <img src="/my_project1/images/payment-providers-image/bitcoin-btc-logo.svg" alt="" class="footer-crypto">
+                                        <img src="/my_project1/images/payment-providers-image/litecoin-ltc-logo 1.svg" alt="" class="footer-crypto">
+                                    </div>
+                            </div>
                         </div>
-                            <!-- Выбор языка -->
-                        <div class="header-menu">
-                            <select name= ”language” class="header-menu-item-select">
-                            <option value= "ENG" selected>ENG</option>
-                            <option value= "UKR">UKR</option>
-                            <option value= "RUS">RUS</option>
-                            </select>
-                        </div>
-                            <!-- Валюта -->
-                        <div class="header-menu">
-                                <select name= ”currency” class="header-menu-item-select">
-                                    <option value= "USD" selected>$ USD</option>
-                                    <option value= "UAH">₴ UAH</option>
-                                    <option value= "RUR">₽ RUR</option>
-                                </select>
-                        </div>
-                            <img src="./images/avatar.svg" alt="">
-                                <select name= ”My account” class="header-menu-item-select">
-                                    <option value= "Account №1" selected>My account</option>
-                                    <option value= "Account №2">My account №2</option>
-                                    <option value= "Account №3">My account №3</option>
-                                </select>
-                            <img src="./images/cart.svg" alt="">
-                       
-                        <div class="block-cart">
-                            <span class="item-cart">0</span>
-                        </div>
-                </nav> 
-                
-                
-        </header>
-        <main>
-            <div class="wrapper">
-                <div class="block-flex">
-                    <div id="contact_us">
-                        <h2 class="title_contact">Contact us</h2>
-                        <div class="service_info">
-                            <p><img class ="section_icons_position" src="/my_project1/images/letter.svg" alt=""> Sales: sales@cpunto.com </p>
-                            <p> Customer Service:  support@cpunto.com </p>
-                        </div>
-                
-                        <!-- Номера телефонов -->
-                        <div class="phone_numbers">
-                            <p>+1-833-702-1505 <img src= "../my_project1/images/canadian_flag.svg" alt="canadian_flag"> (Toll-free Canada/USA)</p>
-                            <p>+1-514-808-1875 <img src= "../my_project1/images/canadian_flag.svg" alt="canadian_flag"> (Direct Canada/USA)</p>
-                            <p>+44-113-868-2760 <img src="../my_project1/images/gb_flag.svg" alt="Great_britain_flag" >(Direct United Kingdom)</p>
-                            <p>+64-9-954-4005 <img src="../my_project1/images/australian_flag.svg" alt="australian_flag">(Direct Australia/New Zeland)</p>
-                        </div>
-                
-                        <!-- Локация -->
-                        <p> cPunto, Inc </p>
-                        <p>5929 Trans Canada</p>
-                        <p>suite 130</p>
-                        <p>Saint-Laurent, Quebec,</p>
-                        <p>Canada H4T 1Z6</p>
                     </div>
-            
-                    <!-- <div id="reach_out">
-                        <h2 class="title_reach">Reach out to us</h2>
-                        <p>Name</p>
-                        <form>
-                            <input class="input_data" type="text" placeholder="Enter your name">
-                    
-                            <p>Email</p>
-                    
-                            <input class="input_data" type="text" placeholder="Enter email address">
-                    
-                            <p>Message</p>
-                    
-                            <textarea сlass="input_container" type="text" placeholder="Start writting a message"></textarea>
-                        </form>
-                    </div>
-                    -->
-                </div>
-            </div>
-        </main>
+                </footer>
+        </div>
     </body>
 </html>
